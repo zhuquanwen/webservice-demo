@@ -8,6 +8,12 @@ version '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
+    maven {
+        url 'http://maven.aliyun.com/nexus/content/groups/public/'
+    }
+    maven {
+        url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'
+    }
     maven { url 'http://repo.spring.io/plugins-release' }
     mavenLocal()
     mavenCentral()
@@ -21,6 +27,6 @@ dependencies {
     testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.2.1.RELEASE'
 
 // https://mvnrepository.com/artifact/org.apache.cxf/cxf-spring-boot-starter-jaxws
-    compile group: 'org.apache.client', name: 'client-spring-boot-starter-jaxws', version: '3.3.4'
+    compile group: 'org.apache.cxf', name: 'cxf-spring-boot-starter-jaxws', version: '3.3.4'
 
 }

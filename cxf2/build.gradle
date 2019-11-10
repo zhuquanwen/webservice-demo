@@ -7,6 +7,13 @@ group 'com.zqw.test.client'
 sourceCompatibility = 1.8
 
 repositories {
+    maven {
+        url 'http://maven.aliyun.com/nexus/content/groups/public/'
+    }
+    maven {
+        url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'
+    }
+    maven { url 'http://repo.spring.io/plugins-release' }
     mavenCentral()
 }
 //https://blog.csdn.net/wk52525/article/details/79113978
@@ -14,10 +21,11 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot
     compile group: 'org.springframework.boot', name: 'spring-boot', version: '2.2.1.RELEASE'
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.2.1.RELEASE'
+//    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.2.1.RELEASE'
     // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test
     testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.2.1.RELEASE'
 
+    compile 'org.apache.cxf:cxf-spring-boot-starter-jaxrs:3.3.4'
 
 // https://mvnrepository.com/artifact/com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider
     compile group: 'com.fasterxml.jackson.jaxrs', name: 'jackson-jaxrs-json-provider', version: '2.8.5'

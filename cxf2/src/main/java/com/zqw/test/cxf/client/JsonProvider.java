@@ -1,18 +1,9 @@
-package com.zqw.test.cxf;
+package com.zqw.test.cxf.client;
 
 import com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
-
-/**
- * //TODO
- *
- * @author zhuquanwen
- * @vesion 1.0
- * @date 2019/11/10 19:43
- * @since jdk1.8
- */
 
 @Component
 public class JsonProvider extends ArrayList<JacksonJaxbJsonProvider> {
