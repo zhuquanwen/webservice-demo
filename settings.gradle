@@ -1,0 +1,4 @@
+rootProject.name = 'webservice-demo'
+include 'client'
+include 'cxf2'
+
